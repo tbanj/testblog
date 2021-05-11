@@ -23,8 +23,7 @@ class MenuScreen extends Component {
         return (
 
             <View style={[styles.container, { width: Dimensions.get('window').width * 0.8 }]}>
-                <TouchableOpacity onPress={async () => {
-                    await this.props.onLogout();
+                <TouchableOpacity onPress={() => {
                 }}>
                     <View style={styles.drawItem}>
                         <Icon style={styles.drawItemIcon} name={'logout'} size={30} color="#aaa" />
@@ -38,18 +37,6 @@ class MenuScreen extends Component {
 }
 
 MenuScreen.options = {
-    // topBar: {
-    //     title: {
-    //         text: 'MENU_SCREEN',
-    //         color: 'white',
-    //     },
-    //     background: {
-    //         color: '#4d089a',
-    //     },
-    // },
-    // bottomTab: {
-    //     text: 'MENU_SCREEN',
-    // },
     sideMenu: {
         left: {
             visible: false,

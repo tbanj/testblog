@@ -6,28 +6,17 @@ import {
 } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 import { useDispatch } from 'react-redux';
-// import auth from '@react-native-firebase/auth';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { getIcon } from '../../lib/iconhelper';
 import { addPlace } from '../../store/actions/index';
 import PlaceInput from '../../components/placeInput/PlaceInput';
 import startMainTabs from '../maintabs/startMainTabs';
-// import DefaultInput from '../../components/UI/defaultInput/DefaultInput';
 import TextHeading from '../../components/UI/headingText/HeadingText';
-// import ButtonWithBg from '../../components/UI/buttonWithBg/ButtonWithBg';
-// import DefaultTouchable from '../../components/UI/defaultTouch/DefaultTouchable';
-// import ImagePlaceholder from '../../../assets/home.png';
 import MainText from '../../components/UI/mainText/MainText';
 
 
-const SharePlaceScreen = (props) => {
+const ChatRoomScreen = (props) => {
     // const [imagePicker, setImagePicker] = useState(null);
     const [menuBtn, setMenuBtn] = useState(true);
-    // want to listen to an event when navigator events occured
-    // props.navigator.setOnNavigatorEvent(onNavigatorEvent);
-
-    // const onNavigatorEvent = event => {
-    //     console.warn('event', event);
-    // };
 
     const dispatch = useDispatch();
 
@@ -39,19 +28,47 @@ const SharePlaceScreen = (props) => {
 
     // const submitButton = ''
     useEffect(() => {
-        // Subscribe
-        // auth().signInAnonymously();
+        const data = getIcon(0);
+        Navigation.mergeOptions('chatRoom', {
+            topBar: {
+                title: {
+                    text: 'Chat Room',
+                    color: 'white',
+                },
+                background: {
+                    color: '#4d089a',
+                },
+                /* to make button open a sideMenu Screen, we need to listen to Navigation
+                events */
+                leftButtons: {
+                    id: 'sideDrawer_chatRoom',
+                    icon: data[1],
+                    color: 'white',
+                },
+
+            },
+            bottomTab: {
+                // text: 'Chat Room',
+                icon: data[2],
+                selectedIcon: data[2],
+                // selectedTextColor: '#FF1493',
+                selectedIconColor: '#000000',
+                fontFamily: 'Comfortaa-Regular',
+                iconColor: '#808080',
+            },
+        });
+
         const screenEventListener = Navigation.events().registerComponentDidDisappearListener(({ componentId, componentName }) => {
 
 
-            if (componentName === 'awesome-places.MenuScreen') {
+            if (componentName === 'maja.MenuScreen') {
                 setMenuBtn(true);
             }
         });
         // // Unsubscribe
 
-        const sidebarSharePlaceListener = Navigation.events().registerNavigationButtonPressedListener(({ buttonId }) => {
-            if (buttonId === 'sideDrawer_sharePlace') {
+        const sidebarChatRoomListener = Navigation.events().registerNavigationButtonPressedListener(({ buttonId }) => {
+            if (buttonId === 'sideDrawer_chatRoom') {
                 if (Platform.OS === 'android') {
                     Navigation.mergeOptions(startMainTabs.root.sideMenu.id, {
                         sideMenu: {
@@ -80,18 +97,13 @@ const SharePlaceScreen = (props) => {
         });
 
 
-        // unsubscribe sidebarSharePlaceListener
+        // unsubscribe sidebarChatRoomListener
         return () => {
-            sidebarSharePlaceListener.remove();
+            sidebarChatRoomListener.remove();
             screenEventListener.remove();
         };
     }, [menuBtn]);
 
-
-    // const handleImagePicked = () => {
-    //     if (places.length < 1) { return; }
-    //     setImagePicker(places[places.length - 1].image);
-    // };
 
     return (
 
@@ -100,7 +112,7 @@ const SharePlaceScreen = (props) => {
             <KeyboardAvoidingView style={styles.container} behavior="padding">
                 <View style={styles.header}>
                     <MainText>
-                        <TextHeading >Share a Place with us!</TextHeading>
+                        <TextHeading >Chat  with us!</TextHeading>
                     </MainText>
                 </View>
                 {/* <View style={[styles.placeholder, styles.imgHeight, styles.mb]}>
@@ -164,57 +176,7 @@ const styles = StyleSheet.create({
     },
     placeImage: { marginRight: 8, height: 30, width: 30 },
 });
-export default SharePlaceScreen;
+export default ChatRoomScreen;
 
 
-// use if u want to make use of a single icon
-// async function getMapIcon() {
-//     const source = await Icon.getImageSource('md-map', 30);
-// }
 
-// is use to resolve promise which is more than one
-
-
-Promise.all([
-    Icon.getImageSource(Platform.OS === 'android' ? 'md-share-alt' : 'ios-share', 30),
-    Icon.getImageSource(Platform.OS === 'android' ? 'md-menu' : 'ios-menu', 30),
-]).then(sources => {
-    SharePlaceScreen.options = {
-        topBar: {
-            title: {
-                text: 'Share Place',
-                color: 'white',
-            },
-            background: {
-                color: '#4d089a',
-            },
-            /* to make button open a sideMenu Screen, we need to listen to Navigation
-            events */
-            leftButtons: {
-                id: 'sideDrawer_sharePlace',
-                icon: sources[1],
-                color: 'white',
-            },
-
-        },
-        // bottomTab: {
-        //     text: 'Share Place',
-        //     icon: sources[0],
-        // },
-        bottomTab: {
-            text: 'Share Place',
-            icon: sources[0],
-            // iconColor: '#FF1493',
-            // textColor: '#000',
-            selectedIcon: sources[0],
-            selectedTextColor: '#FF1493',
-            selectedIconColor: '#FF1493',
-            fontFamily: 'Comfortaa-Regular',
-        },
-        // bottomTabs: {
-        //     animate: true,
-        // },
-    };
-}).catch(error => {
-    console.error(error.message);
-});

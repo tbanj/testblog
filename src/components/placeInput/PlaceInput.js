@@ -130,13 +130,6 @@ class PlaceInput extends Component {
             submitButton = <View style={styles.pt10}><ActivityIndicator color="#2196F3" /></View>;
         }
 
-        // const handleImageComponent = forwardRef(({ theme, ...rest }, ref) => (
-        //     <PickImage onImagePicker={this.imagePickHandler}
-        //         ref={refs => { this.imagePickHandle = refs; }} />
-
-        // ));
-        // const checkObj = Object.keys(handleImageComponent);
-        // console.log('checkObj, $$typeof', handleImageComponent.$$typeof);
         return (
             <View style={styles.container}>
                 <PickImage onImagePicker={this.imagePickHandler} imagePickerRef={ref => { this.pickImage = ref; }}

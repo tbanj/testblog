@@ -16,7 +16,7 @@ import App from './App';
 //     </Provider>);
 let RNRedux;
 async function getApp() {
-    return await Promise.all([getIcons()]).then(() => { RNRedux = () => (< App />) });
+    return await Promise.all([getIcons()]).then(() => { RNRedux = () => (< App />); });
 }
 getApp();
 // RNRedux = getApp();

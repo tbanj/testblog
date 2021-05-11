@@ -186,9 +186,9 @@ export const authAutoSignIn = () => {
             .then(token => {
                 if (token) {
                     Navigation.setRoot(startMainTabs);
-                    // Navigation.push('findPlace', {
+                    // Navigation.push('home', {
                     //     component: {
-                    //       name: 'awesome-places.Find Place',
+                    //       name: 'maja.home',
                     //       options: { // Optional options object to configure the screen
                     //         topBar: {
                     //           title: {

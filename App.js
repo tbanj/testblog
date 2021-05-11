@@ -9,11 +9,13 @@ import { Navigation } from 'react-native-navigation';
 import { Provider } from 'react-redux';
 
 import startMainTabs from './src/screens/maintabs/startMainTabs';
-import FindPlace from './src/screens/findplace/FindPlace';
+import Home from './src/screens/home/Home';
 import AuthScreen from './src/screens/Auth';
 // import startMainTabs from './src/screens/maintabs/startMainTabs';
 import PlaceDetail from './src/screens/placedetail/PlaceDetail';
-import SharePlace from './src/screens/shareplace/SharePlace';
+import ChatRoom from './src/screens/chatRoom/ChatRoom';
+import LocationScreen from './src/screens/location/Location.js';
+import UserScreen from './src/screens/user/User';
 
 import configureStore from './src/store/configureStore';
 import MenuScreen from './src/screens/menu/MenuScreen';
@@ -27,112 +29,48 @@ Navigation.registerComponent('AuthScreen', () => (props) => (
     </Provider>
 ), () => AuthScreen);
 
-Navigation.registerComponent('awesome-places.Share Place', () => (props) => (
+Navigation.registerComponent('maja.ChatRoom', () => (props) => (
     <Provider store={store}>
-        <SharePlace {...props} />
+        <ChatRoom {...props} />
     </Provider>
-), () => SharePlace);
+), () => ChatRoom);
 
-Navigation.registerComponent('awesome-places.Find Place', () => (props) => (
+Navigation.registerComponent('maja.home', () => (props) => (
     <Provider store={store}>
-        <FindPlace {...props} />
+        <Home {...props} />
     </Provider>
-), () => FindPlace);
+), () => Home);
 
-Navigation.registerComponent('awesome-places.Place Detail', () => (props) => (
+Navigation.registerComponent('maja.Place Detail', () => (props) => (
     <Provider store={store}>
         <PlaceDetail {...props} />
     </Provider>
 ), () => PlaceDetail);
 
-Navigation.registerComponent('awesome-places.MenuScreen', () => (props) => (
+Navigation.registerComponent('maja.MenuScreen', () => (props) => (
     <Provider store={store}>
         <MenuScreen {...props} />
     </Provider>
 ), () => MenuScreen);
 
-// registering sideDrawer without redux store
-// Navigation.registerComponent('awesome-places.SideDrawer',
-//     () => SideDrawer);
 
-// registering sideDrawer with redux store
-// Navigation.registerComponent('awesome-places.SideDrawer', () => (props) => (
-//     <Provider store={store}>
-//         <SideDrawer {...props} />
-//     </Provider>
-// ), () => SideDrawer);
+Navigation.registerComponent('maja.location', () => (props) => (
+    <Provider store={store}>
+        <LocationScreen {...props} />
+    </Provider>
+), () => LocationScreen);
 
-// Navigation.setRoot(startMainTabs);
-const loginRoot = {
-    root: { component: { name: 'AuthScreen' } },
-};
+Navigation.registerComponent('maja.user', () => (props) => (
+    <Provider store={store}>
+        <UserScreen {...props} />
+    </Provider>
+), () => UserScreen);
+
 
 
 
 Navigation.events().registerAppLaunchedListener(async () => {
     Navigation.setRoot(startMainTabs);
-    // Navigation.setRoot(startMainTabs);
-    // Navigation.setRoot(startMainTabs);
-    // Navigation.setDefaultOptions({
-    //     bottomTab: {
-    //         selectedFontSize: 14,
-    //         selectedTextColor: 'blue',
-    //     },
-    // });
-
-    // Navigation.mergeOptions('root', {
-    //     bottomTab: {
-    //         animateBadge: true,
-    //         dotIndicator: {
-    //             animate: true, visible: true,
-    //         },
-    //     },
-    //     // bottomTabs: {
-    //     //     animate: true,
-    //     // },
-    // });
-
-    // startMainTabs.root.bottomTabs.children[0].stack.id,
-    // Navigation.mergeOptions(startMainTabs.root.sideMenu.center.bottomTabs.children[0].stack.id, {
-    //     bottomTab: {
-    //         // iconColor: '#FF1493',
-    //         // textColor: 'red',
-    //         animateBadge: true,
-    //         dotIndicator: {
-    //             animate: true,
-    //             visible: true,
-    //         },
-    //     },
-    //     bottomTabs: {
-    //         animate: true,
-    //     },
-    // });
-
-    // Navigation.mergeOptions(startMainTabs.root.sideMenu.center.bottomTabs.children[1].stack.id, {
-
-    //     bottomTab: {
-    //         // textColor: 'red',
-    //         animateBadge: true,
-    //         dotIndicator: {
-    //             animate: true,
-    //             visible: true,
-    //         },
-    //     },
-    //     bottomTabs: {
-    //         animate: true,
-    //     },
-    // });
-
-
-    // Navigation.mergeOptions(startMainTabs.root.sideMenu.id, {
-
-    //     sideMenu: {
-    //         left: {
-    //             visible: true,
-    //         },
-    //     },
-    // });
-
 });
 
 

@@ -4,8 +4,6 @@ import {
     View, StyleSheet, ImageBackground, Dimensions, KeyboardAvoidingView, TouchableWithoutFeedback,
     Keyboard, ActivityIndicator,
 } from 'react-native';
-import { Navigation } from 'react-native-navigation';
-import startMainTabs from '../screens/maintabs/startMainTabs';
 import { connect } from 'react-redux';
 // import { Navigation } from 'react-native-navigation';
 // import SettingScreen from './maintabs/Setting';
@@ -143,7 +141,6 @@ class AuthScreen extends Component {
                 disabled={!this.state.controls.email.valid || !this.state.controls.confirmPassword.valid
                     && this.state.authMode === 'signup' || !this.state.controls.password.valid}
                 onPress={() => this.loginHandler()}
-                // hhhddd
                 // ref={ref => { this.textInput.submitBtn = ref }}
                 underlayColor="#fff" text={'Submit'} styleText={styles.loginText} />
         );

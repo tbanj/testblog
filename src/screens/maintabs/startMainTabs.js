@@ -1,68 +1,5 @@
 /* eslint-disable prettier/prettier */
 // for tabs only without sideMenu
-// const checkRoot = {
-//     root: {
-//         id: 'root',
-//         bottomTabs: {
-//             children: [
-//                 {
-//                     stack: {
-//                         id: 'tab-1',
-//                         children: [
-//                             {
-//                                 component: {
-//                                     name: 'awesome-places.Find Place',
-//                                 },
-//                             },
-//                         ],
-//                         options: {
-
-//                             bottomTab: {
-//                                 iconColor: '#FF1493',
-//                                 textColor: '#000',
-//                             },
-//                             bottomTabs: {
-//                                 animate: true,
-//                             },
-//                         },
-//                     },
-//                 },
-//                 {
-//                     stack: {
-//                         id: 'tab-2',
-//                         children: [
-//                             {
-//                                 component: {
-//                                     name: 'awesome-places.Share Place',
-//                                 },
-//                             },
-//                         ],
-//                         options: {
-//                             bottomTab: {
-//                                 iconColor: '#FF1493',
-//                                 textColor: '#000',
-//                             },
-//                             bottomTabs: {
-//                                 animate: true,
-//                             },
-//                             // bottomTab: {
-//                             //     animateBadge: true,
-//                             //     dotIndicator: {
-//                             //         animate: true, visible: true,
-//                             //     },
-//                             // },
-//                             // bottomTabs: {
-//                             //     animate: true,
-//                             // },
-//                         },
-//                     },
-//                 },
-//             ],
-
-//         },
-
-//     },
-// };
 
 // for bottom tabs with sideMenu
 const mainRoot = {
@@ -80,7 +17,7 @@ const mainRoot = {
             left: {
                 component: {
                     id: 'Drawer',
-                    name: 'awesome-places.MenuScreen',
+                    name: 'maja.MenuScreen',
                 },
 
             },
@@ -95,8 +32,8 @@ const mainRoot = {
                                 children: [
                                     {
                                         component: {
-                                            id: 'findPlace',
-                                            name: 'awesome-places.Find Place',
+                                            id: 'home',
+                                            name: 'maja.home',
                                         },
                                     },
                                 ],
@@ -117,8 +54,8 @@ const mainRoot = {
                                 children: [
                                     {
                                         component: {
-                                            id: 'sharePlace',
-                                            name: 'awesome-places.Share Place',
+                                            id: 'chatRoom',
+                                            name: 'maja.ChatRoom',
                                         },
                                     },
                                 ],
@@ -140,6 +77,36 @@ const mainRoot = {
                                 //         animate: true,
                                 //     },
                                 // },
+                            },
+                        },
+                        // 3rd tab
+                        {
+                            stack: {
+                                id: 'tab-3',
+                                children: [
+                                    {
+                                        component: {
+                                            id: 'location',
+                                            name: 'maja.location',
+                                        },
+                                    },
+                                ],
+
+                            },
+                        },
+                        // 4th tab
+                        {
+                            stack: {
+                                id: 'tab-4',
+                                children: [
+                                    {
+                                        component: {
+                                            id: 'user',
+                                            name: 'maja.user',
+                                        },
+                                    },
+                                ],
+
                             },
                         },
                     ],
