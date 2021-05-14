@@ -8,7 +8,7 @@ const HeadingText = (props) => (
 const styles = StyleSheet.create({
     textHeading: {
         fontWeight: 'bold',
-        fontSize: 28,
+
     },
 });
 export default HeadingText;

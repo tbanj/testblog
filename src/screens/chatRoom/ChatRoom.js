@@ -12,6 +12,7 @@ import PlaceInput from '../../components/placeInput/PlaceInput';
 import startMainTabs from '../maintabs/startMainTabs';
 import TextHeading from '../../components/UI/headingText/HeadingText';
 import MainText from '../../components/UI/mainText/MainText';
+import ButtonWithBg from '../../components/UI/buttonWithBg/ButtonWithBg';
 
 
 const ChatRoomScreen = (props) => {
@@ -25,6 +26,30 @@ const ChatRoomScreen = (props) => {
         dispatch(addPlace(data));
     };
 
+    const switchtoBlog = () => {
+        console.log('I click on you');
+        // this.setState(prevState => {
+        //     return {
+        //         authMode: prevState.authMode === 'login' ? 'signup' : 'login',
+        //     };
+        // });
+
+        // goto blog component
+        Navigation.push(props.componentId, {
+            component: {
+                name: 'maja.Place Detail',
+                // title: selPlace.name,
+                // passProps: { selectedPlace: selPlace },
+                options: {
+                    topBar: {
+                        title: {
+                            text: 'back',
+                        },
+                    },
+                },
+            },
+        });
+    }
 
     // const submitButton = ''
     useEffect(() => {
@@ -97,6 +122,8 @@ const ChatRoomScreen = (props) => {
         });
 
 
+
+
         // unsubscribe sidebarChatRoomListener
         return () => {
             sidebarChatRoomListener.remove();
@@ -106,37 +133,12 @@ const ChatRoomScreen = (props) => {
 
 
     return (
-
-
-        <ScrollView keyboardShouldPersistTaps="always">
-            <KeyboardAvoidingView style={styles.container} behavior="padding">
-                <View style={styles.header}>
-                    <MainText>
-                        <TextHeading >Chat  with us!</TextHeading>
-                    </MainText>
-                </View>
-                {/* <View style={[styles.placeholder, styles.imgHeight, styles.mb]}>
-                    {places.length > 0 && <Image resizeMode="contain" source={imagePicker} style={styles.previewImage} />}
-
-                </View>
-                <DefaultTouchable style={[styles.loginScreenButton, styles.mb]}
-                    underlayColor="#fff" InnerText={'Pick Image'} styleText={styles.loginText} onPress={() => handleImagePicked()} /> */}
-                <View style={[styles.placeholder]}>
-                    {/* <Text>Map</Text> */}
-
-                </View>
-
-                {/* <DefaultTouchable style={styles.loginScreenButton}
-                    underlayColor="#fff" InnerText={'Locate Me'} styleText={styles.loginText} /> */}
-
-                <PlaceInput onAddPlace={() => placeAddedHandler()} />
-            </KeyboardAvoidingView>
-        </ScrollView>
-
-
-
-
-
+        <View style={styles.container}>
+            <MainText>
+                <TextHeading >Chat  with us!</TextHeading>
+            </MainText>
+            <ButtonWithBg color={'#29aaf4'} onPress={() => switchtoBlog()} text={'View Blogs'} />
+        </View>
     );
 };
 
@@ -148,6 +150,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
+        justifyContent: 'center',
     },
     mb: { marginBottom: 10 },
     placeholder: {

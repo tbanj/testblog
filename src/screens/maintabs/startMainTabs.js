@@ -24,7 +24,7 @@ const mainRoot = {
             center: {
 
                 bottomTabs: {
-                    id: 'BOTTOM_TABS_MAJAPLACE',
+                    id: 'BOTTOM_TABS_MAJABLOG',
                     children: [
                         {
                             stack: {

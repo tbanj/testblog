@@ -12,7 +12,7 @@ import startMainTabs from './src/screens/maintabs/startMainTabs';
 import Home from './src/screens/home/Home';
 import AuthScreen from './src/screens/Auth';
 // import startMainTabs from './src/screens/maintabs/startMainTabs';
-import PlaceDetail from './src/screens/placedetail/PlaceDetail';
+import ChatDetail from './src/screens/chatdetail/ChatDetail';
 import ChatRoom from './src/screens/chatRoom/ChatRoom';
 import LocationScreen from './src/screens/location/Location.js';
 import UserScreen from './src/screens/user/User';
@@ -43,9 +43,9 @@ Navigation.registerComponent('maja.home', () => (props) => (
 
 Navigation.registerComponent('maja.Place Detail', () => (props) => (
     <Provider store={store}>
-        <PlaceDetail {...props} />
+        <ChatDetail {...props} />
     </Provider>
-), () => PlaceDetail);
+), () => ChatDetail);
 
 Navigation.registerComponent('maja.MenuScreen', () => (props) => (
     <Provider store={store}>

@@ -50,7 +50,7 @@ export const addPlace = (placeName, location, image) => {
                     let checkAddState = getState().places.placeAdded;
                     if (checkAddState) {
                         dispatch(startAddPlace());
-                        Navigation.mergeOptions('BOTTOM_TABS_MAJAPLACE', {
+                        Navigation.mergeOptions('BOTTOM_TABS_MAJABLOG', {
                             bottomTabs: {
                                 currentTabIndex: 0,
                             },

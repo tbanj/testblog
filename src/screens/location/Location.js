@@ -12,6 +12,7 @@ import PlaceInput from '../../components/placeInput/PlaceInput';
 import startMainTabs from '../maintabs/startMainTabs';
 import TextHeading from '../../components/UI/headingText/HeadingText';
 import MainText from '../../components/UI/mainText/MainText';
+import ButtonWithBg from '../../components/UI/buttonWithBg/ButtonWithBg';
 
 
 const LocationScreen = (props) => {
@@ -103,30 +104,22 @@ const LocationScreen = (props) => {
         };
     }, [menuBtn]);
 
-
+    const switchtoBlog = () => {
+        console.log('I click on you home');
+        Navigation.mergeOptions('BOTTOM_TABS_MAJABLOG', {
+            bottomTabs: {
+                currentTabIndex: 1,
+            },
+        });
+    };
     return (
 
-
-        <ScrollView keyboardShouldPersistTaps="always">
-            <KeyboardAvoidingView style={styles.container} behavior="padding">
-                <View style={styles.header}>
-                    <MainText>
-                        <TextHeading >Location  with us!</TextHeading>
-                    </MainText>
-                </View>
-
-                <View style={[styles.placeholder]} />
-
-
-
-                <PlaceInput onAddPlace={() => placeAddedHandler()} />
-            </KeyboardAvoidingView>
-        </ScrollView>
-
-
-
-
-
+        <View style={styles.container}>
+            <MainText>
+                <TextHeading >Location Slide</TextHeading>
+            </MainText>
+            <ButtonWithBg color={'#29aaf4'} onPress={() => switchtoBlog()} text={'Go to Blog Slide'} />
+        </View>
     );
 };
 
@@ -138,6 +131,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
+        justifyContent: 'center',
     },
     mb: { marginBottom: 10 },
     placeholder: {

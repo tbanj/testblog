@@ -2,23 +2,38 @@
 import React, { Component } from 'react';
 import {
     View, StyleSheet, ImageBackground, Dimensions, KeyboardAvoidingView, TouchableWithoutFeedback,
-    Keyboard, ActivityIndicator,
+    TextInput
 } from 'react-native';
 
 import HeadingText from '../../components/UI/headingText/HeadingText';
-import MainText from '../components/UI/mainText/MainText';
+import MainText from '../../components/UI/mainText/MainText';
 
 class HomeContent extends Component {
-    state = {}
+    constructor(props) {
+        super(props);
+        this.state = {
+            searchContent: null,
+        };
+    }
     render() {
+        const { searchContent } = this.state;
         let headingText = null;
         if (Dimensions.get('window').height > 500) {
             headingText = (<MainText>
-                <HeadingText style={styles.HeadingText}>Please Login</HeadingText>
+                <HeadingText style={styles.textHeading}>Search</HeadingText>
             </MainText>);
         }
 
-        return (<View></View>);
+        return (<View style={styles.root}>
+            {/* {headingText} */}
+            <TextInput
+                style={styles.inputContainer}
+                onChangeText={() => this.setState({ searchContent: null })}
+                value={searchContent}
+                placeholder="useless placeholder"
+                keyboardType="default"
+            />
+        </View>);
     }
 }
 
@@ -27,8 +42,9 @@ const styles = StyleSheet.create({
     root: {
 
         flex: 1,
-        justifyContent: 'center',
-        backgroundColor: 'whitesmoke',
+        // justifyContent: 'center',
+        // backgroundColor: 'whitesmoke',
+        margin: 15,
     },
     container: {
 
@@ -48,7 +64,8 @@ const styles = StyleSheet.create({
         borderColor: '#bbb',
     },
     inputContainer: {
-        width: '80%',
+        width: '100%',
+
     },
     background: {
         width: '100%',

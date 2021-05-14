@@ -7,6 +7,9 @@ import { getIcon } from '../../lib/iconhelper';
 import PlaceList from '../../components/placeList/PlaceList';
 import { getPlaces } from '../../store/actions/index';
 import startMainTabs from '../maintabs/startMainTabs';
+import TextHeading from '../../components/UI/headingText/HeadingText';
+import MainText from '../../components/UI/mainText/MainText';
+import ButtonWithBg from '../../components/UI/buttonWithBg/ButtonWithBg';
 
 
 const HomeScreen = (props) => {
@@ -142,7 +145,7 @@ const HomeScreen = (props) => {
         const selPlace = places.find(place => place.key === data);
         Navigation.push(props.componentId, {
             component: {
-                name: 'awesome-places.Place Detail',
+                name: 'maja.Place Detail',
                 title: selPlace.name,
                 passProps: { selectedPlace: selPlace },
                 options: {
@@ -157,11 +160,25 @@ const HomeScreen = (props) => {
 
     };
 
+    const switchtoBlog = () => {
+        console.log('I click on you home');
+        Navigation.mergeOptions('BOTTOM_TABS_MAJABLOG', {
+            bottomTabs: {
+                currentTabIndex: 1,
+            },
+        });
+    };
+
     return (
-        <View style={placesLoaded ? null : styles.buttonContainer}>
-            {content}
+        <View style={styles.buttonContainer}>
+            {/* {content} */}
             {/* {!placesLoaded && content}
             {placesLoaded && <PlaceList places={places} onItemSelected={(data) => itemSelectedHandler(data)} />} */}
+
+            <MainText>
+                <TextHeading >Home Slide</TextHeading>
+            </MainText>
+            <ButtonWithBg color={'#29aaf4'} onPress={() => switchtoBlog()} text={'Go to Blog Slide'} />
         </View>
     );
 };

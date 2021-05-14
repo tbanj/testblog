@@ -6,11 +6,9 @@ import IconFA from 'react-native-vector-icons/FontAwesome5';
 let iconList;
 async function getIcons() {
     await Promise.all([
-        // Icon.getImageSource(Platform.OS === 'android' ? 'md-map' : 'ios-map', 30),
         IconMCI.getImageSource('home', 30),
         Icon.getImageSource(Platform.OS === 'android' ? 'md-menu' : 'ios-menu', 30),
-        Icon.getImageSource(Platform.OS === 'android' ? 'md-chatbubble' : 'ios-chatbubble', 30),
-
+        Icon.getImageSource(Platform.OS === 'android' ? 'md-chatbubble' : 'md-chatbubble', 30),
         IconMCI.getImageSource('map-marker', 30),
         IconFA.getImageSource('user', 30),
         //  IconMCI ..user
