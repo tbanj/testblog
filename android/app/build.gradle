@@ -130,7 +130,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.majaplace"
+        applicationId "com.majablog"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

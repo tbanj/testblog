@@ -3,12 +3,8 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
 // import { Navigation } from 'react-native-navigation';
 // import Icon from 'react-native-vector-icons/AntDesign';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/AntDesign';
 import { connect } from 'react-redux';
-import { authGreetingState, authLogout } from '../../store/actions/auth';
-// import { authLogout } from '../../store/actions/index';
-// import startMainTabs from '../maintabs/startMainTabs';
-// import SettingScreen from './maintabs/Setting';
 class MenuScreen extends Component {
     constructor(props) {
 
@@ -27,7 +23,7 @@ class MenuScreen extends Component {
                 <TouchableOpacity onPress={() => {
                 }}>
                     <View style={styles.drawItem}>
-                        <Icon style={styles.drawItemIcon} name={'md-chatbubble-ellipses-outline'} size={30} color="#aaa" />
+                        <Icon style={styles.drawItemIcon} name={'logout'} size={30} color="#aaa" />
                         <Text>Logout</Text>
                     </View>
                 </TouchableOpacity>
@@ -68,18 +64,9 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state) => {
     return {
-        token: state.auth.token,
-        places: state.places.places,
-        greetingState: state.auth.greetingState,
+        news: state.news.news
     };
 };
 
-const mapDispatchToProps = dispatch => {
-    return {
-        onLogout: () => { dispatch(authLogout()); },
-        onGreeting: () => dispatch(authGreetingState()),
 
-    };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(MenuScreen);
+export default connect(mapStateToProps, null)(MenuScreen);

@@ -1,14 +1,12 @@
 /* eslint-disable prettier/prettier */
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import reduxThunk from 'redux-thunk';
-import placesReducer from './reducers/places';
+import newsReducer from './reducers/news';
 import uiReducer from './reducers/ui';
-import authReducer from './reducers/auth';
 export const middlewares = [reduxThunk];
 const rootReducer = combineReducers({
-    places: placesReducer,
+    news: newsReducer,
     ui: uiReducer,
-    auth: authReducer,
 });
 let composeEnhancers = compose;
 

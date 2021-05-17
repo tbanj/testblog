@@ -4,8 +4,7 @@ import { View, Text, Platform, TouchableOpacity, StyleSheet, Animated } from 're
 import { Navigation } from 'react-native-navigation';
 import { useSelector, useDispatch } from 'react-redux';
 import { getIcon } from '../../lib/iconhelper';
-import PlaceList from '../../components/placeList/PlaceList';
-import { getPlaces } from '../../store/actions/index';
+import { getNews } from '../../store/actions/index';
 import startMainTabs from '../maintabs/startMainTabs';
 import TextHeading from '../../components/UI/headingText/HeadingText';
 import MainText from '../../components/UI/mainText/MainText';
@@ -19,7 +18,7 @@ const HomeScreen = (props) => {
     const [placesAnim] = useState(new Animated.Value(0));
     const [menuBtn, setMenuBtn] = useState(true);
     const { places } = useSelector(state => ({
-        places: state.places.places,
+        news: state.news.newss,
     }));
     const [user, setUser] = useState();
 
@@ -52,7 +51,7 @@ const HomeScreen = (props) => {
                 iconColor: '#808080',
             },
         });
-        dispatch(getPlaces());
+        dispatch(getNews());
         const screenEventListener = Navigation.events().registerComponentDidDisappearListener(({ componentId, componentName }) => {
 
             if (componentName === 'maja.MenuScreen') {
@@ -132,14 +131,6 @@ const HomeScreen = (props) => {
         </TouchableOpacity  >
     </Animated.View>);
 
-    if (placesLoaded) {
-        content = (<Animated.View style={{
-            opacity: placesAnim,
-        }}>
-            <Text>how are you</Text>
-            <PlaceList places={places} onItemSelected={(data) => itemSelectedHandler(data)} />
-        </Animated.View>);
-    }
 
     const itemSelectedHandler = (data) => {
         const selPlace = places.find(place => place.key === data);
@@ -161,7 +152,6 @@ const HomeScreen = (props) => {
     };
 
     const switchtoBlog = () => {
-        console.log('I click on you home');
         Navigation.mergeOptions('BOTTOM_TABS_MAJABLOG', {
             bottomTabs: {
                 currentTabIndex: 1,
@@ -171,10 +161,6 @@ const HomeScreen = (props) => {
 
     return (
         <View style={styles.buttonContainer}>
-            {/* {content} */}
-            {/* {!placesLoaded && content}
-            {placesLoaded && <PlaceList places={places} onItemSelected={(data) => itemSelectedHandler(data)} />} */}
-
             <MainText>
                 <TextHeading >Home Slide</TextHeading>
             </MainText>

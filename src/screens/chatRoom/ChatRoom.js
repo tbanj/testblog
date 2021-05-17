@@ -5,10 +5,8 @@ import {
     Platform, KeyboardAvoidingView,
 } from 'react-native';
 import { Navigation } from 'react-native-navigation';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getIcon } from '../../lib/iconhelper';
-import { addPlace } from '../../store/actions/index';
-import PlaceInput from '../../components/placeInput/PlaceInput';
 import startMainTabs from '../maintabs/startMainTabs';
 import TextHeading from '../../components/UI/headingText/HeadingText';
 import MainText from '../../components/UI/mainText/MainText';
@@ -16,30 +14,22 @@ import ButtonWithBg from '../../components/UI/buttonWithBg/ButtonWithBg';
 
 
 const ChatRoomScreen = (props) => {
-    // const [imagePicker, setImagePicker] = useState(null);
     const [menuBtn, setMenuBtn] = useState(true);
 
     const dispatch = useDispatch();
+    const { news } = useSelector(state => ({
+        news: state.news,
+    }));
 
 
-    const placeAddedHandler = (data) => {
-        dispatch(addPlace(data));
-    };
-
-    const switchtoBlog = () => {
-        console.log('I click on you');
-        // this.setState(prevState => {
-        //     return {
-        //         authMode: prevState.authMode === 'login' ? 'signup' : 'login',
-        //     };
-        // });
-
+    const switchtoBlog = (newsData) => {
         // goto blog component
         Navigation.push(props.componentId, {
             component: {
                 name: 'maja.Place Detail',
+                id: 'majablogdetail',
                 // title: selPlace.name,
-                // passProps: { selectedPlace: selPlace },
+                passProps: newsData,
                 options: {
                     topBar: {
                         title: {
@@ -121,15 +111,13 @@ const ChatRoomScreen = (props) => {
             }
         });
 
-
-
-
+        Navigation.updateProps('majablogdetail', news);
         // unsubscribe sidebarChatRoomListener
         return () => {
             sidebarChatRoomListener.remove();
             screenEventListener.remove();
         };
-    }, [menuBtn]);
+    }, [menuBtn, news]);
 
 
     return (
@@ -137,46 +125,18 @@ const ChatRoomScreen = (props) => {
             <MainText>
                 <TextHeading >Chat  with us!</TextHeading>
             </MainText>
-            <ButtonWithBg color={'#29aaf4'} onPress={() => switchtoBlog()} text={'View Blogs'} />
+            <ButtonWithBg color={'#29aaf4'} onPress={() => switchtoBlog(news)} text={'View Blogs'} />
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    header: {
-        alignItems: 'center',
-    },
-    testDiv: { flex: 1 },
     container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
     },
     mb: { marginBottom: 10 },
-    placeholder: {
-        borderColor: 'black',
-        // backgroundColor: '#eee',
-        width: '80%',
-        // alignItems: 'center',
-
-    },
-    imgHeight: { height: 150 },
-
-    previewImage: {
-        width: '100%',
-        height: '100%',
-    },
-    loginScreenButton: {
-        marginRight: 40,
-        marginLeft: 40,
-        marginTop: 10,
-        paddingTop: 10,
-        paddingBottom: 10,
-        backgroundColor: '#2196F3',
-        borderRadius: 10,
-        borderWidth: 1,
-        borderColor: '#fff',
-    },
     placeImage: { marginRight: 8, height: 30, width: 30 },
 });
 export default ChatRoomScreen;

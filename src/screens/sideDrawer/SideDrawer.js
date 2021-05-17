@@ -46,18 +46,6 @@ class SideDrawer extends React.Component {
             </View>
         );
     }
-
-    // navigationButtonPressed({ buttonId }) {
-    //     if (buttonId === 'sideMenu') {
-    //         Navigation.mergeOptions(this, {
-    //             sideMenu: {
-    //                 left: {
-    //                     visible: true,
-    //                 },
-    //             },
-    //         });
-    //     }
-    // }
 }
 SideDrawer.options = {
     topBar: {
@@ -74,13 +62,5 @@ SideDrawer.options = {
     },
 };
 
-// const styles = StyleSheet.create({
-//     root: {
-//         flex: 1,
-//         alignItems: 'center',
-//         justifyContent: 'center',
-//         backgroundColor: 'whitesmoke',
-//     },
-// });
 export default SideDrawer;
 

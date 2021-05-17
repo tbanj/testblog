@@ -27,21 +27,6 @@ function removePath(path) {
     })
 }
 
-// exports.majaPlace = functions.https.onRequest((request, response) => {
-//     const body = JSON.parse(request.body);
-//     // const body = request.body;
-//     // return response.send({ data: `Welcome to ${body.name}` });
-//     return response.status(201).json({ data: `Welcome to ${body.name}` });
-// });
-
-// exports.majaPlace = functions.https.onRequest((request, response) => {
-//     cors(request, response, () => {
-//         const body = JSON.parse(request.body);
-//         // return response.send({ data: `Welcome to ${body.name}` });
-//         return response.status(201).json({ data: `Welcome to a ${body.name}` });
-//     })
-// });
-
 exports.storeImage = functions.https.onRequest((request, response) => {
     /* functions.logger.info('Hello logs!', {structuredData: true});
     response.send('Hello from Firebase!'); */

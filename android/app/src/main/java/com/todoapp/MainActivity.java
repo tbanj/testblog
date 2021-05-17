@@ -1,4 +1,4 @@
-package com.majaplace;
+package com.majablog;
 import com.reactnativenavigation.NavigationActivity;
 import android.widget.LinearLayout;
 import android.graphics.Color;
@@ -16,7 +16,7 @@ public class MainActivity extends NavigationActivity {
         //     view.setGravity(Gravity.CENTER);
 
         //     textView.setTextColor(Color.parseColor("#ffffff"));
-        //     textView.setText("Majaplace");
+        //     textView.setText("Majablog");
         //     textView.setGravity(Gravity.CENTER);
         //     textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 40);
 

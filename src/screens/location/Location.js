@@ -7,8 +7,6 @@ import {
 import { Navigation } from 'react-native-navigation';
 import { useDispatch } from 'react-redux';
 import { getIcon } from '../../lib/iconhelper';
-import { addPlace } from '../../store/actions/index';
-import PlaceInput from '../../components/placeInput/PlaceInput';
 import startMainTabs from '../maintabs/startMainTabs';
 import TextHeading from '../../components/UI/headingText/HeadingText';
 import MainText from '../../components/UI/mainText/MainText';
@@ -21,9 +19,6 @@ const LocationScreen = (props) => {
     const dispatch = useDispatch();
 
 
-    const placeAddedHandler = (data) => {
-        dispatch(addPlace(data));
-    };
 
 
     // const submitButton = ''
@@ -97,7 +92,7 @@ const LocationScreen = (props) => {
         });
 
 
-        // unsubscribe sidebarChatRoomListener
+        // unsubscribe sidebarLocationListener
         return () => {
             sidebarLocationListener.remove();
             screenEventListener.remove();
@@ -105,7 +100,6 @@ const LocationScreen = (props) => {
     }, [menuBtn]);
 
     const switchtoBlog = () => {
-        console.log('I click on you home');
         Navigation.mergeOptions('BOTTOM_TABS_MAJABLOG', {
             bottomTabs: {
                 currentTabIndex: 1,
@@ -124,38 +118,12 @@ const LocationScreen = (props) => {
 };
 
 const styles = StyleSheet.create({
-    header: {
-        alignItems: 'center',
-    },
-    testDiv: { flex: 1 },
     container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
     },
     mb: { marginBottom: 10 },
-    placeholder: {
-        borderColor: 'black',
-        width: '80%',
-
-    },
-    imgHeight: { height: 150 },
-
-    previewImage: {
-        width: '100%',
-        height: '100%',
-    },
-    loginScreenButton: {
-        marginRight: 40,
-        marginLeft: 40,
-        marginTop: 10,
-        paddingTop: 10,
-        paddingBottom: 10,
-        backgroundColor: '#2196F3',
-        borderRadius: 10,
-        borderWidth: 1,
-        borderColor: '#fff',
-    },
     placeImage: { marginRight: 8, height: 30, width: 30 },
 });
 export default LocationScreen;

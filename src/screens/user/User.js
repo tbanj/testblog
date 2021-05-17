@@ -124,38 +124,12 @@ const UserScreen = (props) => {
 };
 
 const styles = StyleSheet.create({
-    header: {
-        alignItems: 'center',
-    },
-    testDiv: { flex: 1 },
     container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
     },
     mb: { marginBottom: 10 },
-    placeholder: {
-        borderColor: 'black',
-        width: '80%',
-
-    },
-    imgHeight: { height: 150 },
-
-    previewImage: {
-        width: '100%',
-        height: '100%',
-    },
-    loginScreenButton: {
-        marginRight: 40,
-        marginLeft: 40,
-        marginTop: 10,
-        paddingTop: 10,
-        paddingBottom: 10,
-        backgroundColor: '#2196F3',
-        borderRadius: 10,
-        borderWidth: 1,
-        borderColor: '#fff',
-    },
     placeImage: { marginRight: 8, height: 30, width: 30 },
 });
 export default UserScreen;

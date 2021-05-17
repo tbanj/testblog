@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* majaplaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* majaplaceTests.m */; };
-		06835BAA62511379343D4D0B /* libPods-majaplace-majaplaceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8847E464CD00B126FEBB1C /* libPods-majaplace-majaplaceTests.a */; };
+		00E356F31AD99517003FC87E /* majablogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* majablogTests.m */; };
+		06835BAA62511379343D4D0B /* libPods-majablog-majablogTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8847E464CD00B126FEBB1C /* libPods-majablog-majablogTests.a */; };
 		080117B62547C02B00F682A0 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080117B52547C02B00F682A0 /* BootSplash.storyboard */; };
 		080117B72547C02B00F682A0 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080117B52547C02B00F682A0 /* BootSplash.storyboard */; };
 		08B715DF2532DA030005384E /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
@@ -17,13 +17,13 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2AA06FCA68AD2EE485812481 /* libPods-majaplace-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B906E16D9788F258F84D4F /* libPods-majaplace-tvOSTests.a */; };
+		2AA06FCA68AD2EE485812481 /* libPods-majablog-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B906E16D9788F258F84D4F /* libPods-majablog-tvOSTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* majaplaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* majaplaceTests.m */; };
-		674AC9B280E5205645957D8A /* libPods-majaplace-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8541BA7B59251ADFA4C80FB /* libPods-majaplace-tvOS.a */; };
-		F72573FA1E54E61A718FF44A /* libPods-majaplace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5C2E33F93E3D8B2AE69E1A /* libPods-majaplace.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* majablogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* majablogTests.m */; };
+		674AC9B280E5205645957D8A /* libPods-majablog-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8541BA7B59251ADFA4C80FB /* libPods-majablog-tvOS.a */; };
+		F72573FA1E54E61A718FF44A /* libPods-majablog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5C2E33F93E3D8B2AE69E1A /* libPods-majablog.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,47 +32,47 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = majaplace;
+			remoteInfo = majablog;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "majaplace-tvOS";
+			remoteInfo = "majablog-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* majaplaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = majaplaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* majablogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = majablogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* majaplaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = majaplaceTests.m; sourceTree = "<group>"; };
-		080117B52547C02B00F682A0 /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = majaplace/BootSplash.storyboard; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* majablogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = majablogTests.m; sourceTree = "<group>"; };
+		080117B52547C02B00F682A0 /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = majablog/BootSplash.storyboard; sourceTree = "<group>"; };
 		08B715E02532DDF30005384E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		10F5C3C0B65B76D9ABD06CBB /* Pods-majaplace-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majaplace-tvOS.release.xcconfig"; path = "Target Support Files/Pods-majaplace-tvOS/Pods-majaplace-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* majaplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = majaplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = majaplace/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = majaplace/AppDelegate.m; sourceTree = "<group>"; };
+		10F5C3C0B65B76D9ABD06CBB /* Pods-majablog-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majablog-tvOS.release.xcconfig"; path = "Target Support Files/Pods-majablog-tvOS/Pods-majablog-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* majablog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = majablog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = majablog/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = majablog/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = majaplace/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = majaplace/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = majaplace/main.m; sourceTree = "<group>"; };
-		14D4B254717B23900E41CBD5 /* Pods-majaplace-majaplaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majaplace-majaplaceTests.debug.xcconfig"; path = "Target Support Files/Pods-majaplace-majaplaceTests/Pods-majaplace-majaplaceTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* majaplace-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "majaplace-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* majaplace-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "majaplace-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C0BE6D19333A33F05A7DF59 /* Pods-majaplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majaplace.release.xcconfig"; path = "Target Support Files/Pods-majaplace/Pods-majaplace.release.xcconfig"; sourceTree = "<group>"; };
-		5C5C2E33F93E3D8B2AE69E1A /* libPods-majaplace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-majaplace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		87A76B6CC6FEA85F97CF4066 /* Pods-majaplace-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majaplace-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-majaplace-tvOSTests/Pods-majaplace-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		89B906E16D9788F258F84D4F /* libPods-majaplace-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-majaplace-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2B62041F7E3066FEBC0C18C /* Pods-majaplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majaplace.debug.xcconfig"; path = "Target Support Files/Pods-majaplace/Pods-majaplace.debug.xcconfig"; sourceTree = "<group>"; };
-		ACEA9ED6F1B2973E03958430 /* Pods-majaplace-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majaplace-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-majaplace-tvOS/Pods-majaplace-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		B0F40E5571407C2957199E7D /* Pods-majaplace-majaplaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majaplace-majaplaceTests.release.xcconfig"; path = "Target Support Files/Pods-majaplace-majaplaceTests/Pods-majaplace-majaplaceTests.release.xcconfig"; sourceTree = "<group>"; };
-		CE1F236493026E00B8DBFCB8 /* Pods-majaplace-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majaplace-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-majaplace-tvOSTests/Pods-majaplace-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D8541BA7B59251ADFA4C80FB /* libPods-majaplace-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-majaplace-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = majablog/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = majablog/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = majablog/main.m; sourceTree = "<group>"; };
+		14D4B254717B23900E41CBD5 /* Pods-majablog-majablogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majablog-majablogTests.debug.xcconfig"; path = "Target Support Files/Pods-majablog-majablogTests/Pods-majablog-majablogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* majablog-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "majablog-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* majablog-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "majablog-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0BE6D19333A33F05A7DF59 /* Pods-majablog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majablog.release.xcconfig"; path = "Target Support Files/Pods-majablog/Pods-majablog.release.xcconfig"; sourceTree = "<group>"; };
+		5C5C2E33F93E3D8B2AE69E1A /* libPods-majablog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-majablog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A76B6CC6FEA85F97CF4066 /* Pods-majablog-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majablog-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-majablog-tvOSTests/Pods-majablog-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		89B906E16D9788F258F84D4F /* libPods-majablog-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-majablog-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B62041F7E3066FEBC0C18C /* Pods-majablog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majablog.debug.xcconfig"; path = "Target Support Files/Pods-majablog/Pods-majablog.debug.xcconfig"; sourceTree = "<group>"; };
+		ACEA9ED6F1B2973E03958430 /* Pods-majablog-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majablog-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-majablog-tvOS/Pods-majablog-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B0F40E5571407C2957199E7D /* Pods-majablog-majablogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majablog-majablogTests.release.xcconfig"; path = "Target Support Files/Pods-majablog-majablogTests/Pods-majablog-majablogTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE1F236493026E00B8DBFCB8 /* Pods-majablog-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majablog-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-majablog-tvOSTests/Pods-majablog-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8541BA7B59251ADFA4C80FB /* libPods-majablog-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-majablog-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EE8847E464CD00B126FEBB1C /* libPods-majaplace-majaplaceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-majaplace-majaplaceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8847E464CD00B126FEBB1C /* libPods-majablog-majablogTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-majablog-majablogTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06835BAA62511379343D4D0B /* libPods-majaplace-majaplaceTests.a in Frameworks */,
+				06835BAA62511379343D4D0B /* libPods-majablog-majablogTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F72573FA1E54E61A718FF44A /* libPods-majaplace.a in Frameworks */,
+				F72573FA1E54E61A718FF44A /* libPods-majablog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				674AC9B280E5205645957D8A /* libPods-majaplace-tvOS.a in Frameworks */,
+				674AC9B280E5205645957D8A /* libPods-majablog-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,20 +104,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AA06FCA68AD2EE485812481 /* libPods-majaplace-tvOSTests.a in Frameworks */,
+				2AA06FCA68AD2EE485812481 /* libPods-majablog-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* majaplaceTests */ = {
+		00E356EF1AD99517003FC87E /* majablogTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* majaplaceTests.m */,
+				00E356F21AD99517003FC87E /* majablogTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = majaplaceTests;
+			path = majablogTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -135,7 +135,7 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* majaplace */ = {
+		13B07FAE1A68108700A75B9A /* majablog */ = {
 			isa = PBXGroup;
 			children = (
 				08B715E02532DDF30005384E /* GoogleService-Info.plist */,
@@ -148,7 +148,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = majaplace;
+			name = majablog;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -156,10 +156,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				5C5C2E33F93E3D8B2AE69E1A /* libPods-majaplace.a */,
-				EE8847E464CD00B126FEBB1C /* libPods-majaplace-majaplaceTests.a */,
-				D8541BA7B59251ADFA4C80FB /* libPods-majaplace-tvOS.a */,
-				89B906E16D9788F258F84D4F /* libPods-majaplace-tvOSTests.a */,
+				5C5C2E33F93E3D8B2AE69E1A /* libPods-majablog.a */,
+				EE8847E464CD00B126FEBB1C /* libPods-majablog-majablogTests.a */,
+				D8541BA7B59251ADFA4C80FB /* libPods-majablog-tvOS.a */,
+				89B906E16D9788F258F84D4F /* libPods-majablog-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,9 +175,9 @@
 			isa = PBXGroup;
 			children = (
 				084DE8F82462E26B000A65AA /* Fonts */,
-				13B07FAE1A68108700A75B9A /* majaplace */,
+				13B07FAE1A68108700A75B9A /* majablog */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* majaplaceTests */,
+				00E356EF1AD99517003FC87E /* majablogTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D04110AC7979E9480E178706 /* Pods */,
@@ -191,10 +191,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* majaplace.app */,
-				00E356EE1AD99517003FC87E /* majaplaceTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* majaplace-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* majaplace-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* majablog.app */,
+				00E356EE1AD99517003FC87E /* majablogTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* majablog-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* majablog-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,14 +202,14 @@
 		D04110AC7979E9480E178706 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A2B62041F7E3066FEBC0C18C /* Pods-majaplace.debug.xcconfig */,
-				3C0BE6D19333A33F05A7DF59 /* Pods-majaplace.release.xcconfig */,
-				14D4B254717B23900E41CBD5 /* Pods-majaplace-majaplaceTests.debug.xcconfig */,
-				B0F40E5571407C2957199E7D /* Pods-majaplace-majaplaceTests.release.xcconfig */,
-				ACEA9ED6F1B2973E03958430 /* Pods-majaplace-tvOS.debug.xcconfig */,
-				10F5C3C0B65B76D9ABD06CBB /* Pods-majaplace-tvOS.release.xcconfig */,
-				CE1F236493026E00B8DBFCB8 /* Pods-majaplace-tvOSTests.debug.xcconfig */,
-				87A76B6CC6FEA85F97CF4066 /* Pods-majaplace-tvOSTests.release.xcconfig */,
+				A2B62041F7E3066FEBC0C18C /* Pods-majablog.debug.xcconfig */,
+				3C0BE6D19333A33F05A7DF59 /* Pods-majablog.release.xcconfig */,
+				14D4B254717B23900E41CBD5 /* Pods-majablog-majablogTests.debug.xcconfig */,
+				B0F40E5571407C2957199E7D /* Pods-majablog-majablogTests.release.xcconfig */,
+				ACEA9ED6F1B2973E03958430 /* Pods-majablog-tvOS.debug.xcconfig */,
+				10F5C3C0B65B76D9ABD06CBB /* Pods-majablog-tvOS.release.xcconfig */,
+				CE1F236493026E00B8DBFCB8 /* Pods-majablog-tvOSTests.debug.xcconfig */,
+				87A76B6CC6FEA85F97CF4066 /* Pods-majablog-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -224,9 +224,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* majaplaceTests */ = {
+		00E356ED1AD99517003FC87E /* majablogTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "majaplaceTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "majablogTests" */;
 			buildPhases = (
 				73669632EA04917D78D6C2D9 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -240,14 +240,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = majaplaceTests;
-			productName = majaplaceTests;
-			productReference = 00E356EE1AD99517003FC87E /* majaplaceTests.xctest */;
+			name = majablogTests;
+			productName = majablogTests;
+			productReference = 00E356EE1AD99517003FC87E /* majablogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* majaplace */ = {
+		13B07F861A680F5B00A75B9A /* majablog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "majaplace" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "majablog" */;
 			buildPhases = (
 				EA4F4B817225427A4F859883 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -257,20 +257,19 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				705C41202B18AB34781190A3 /* [CP] Embed Pods Frameworks */,
 				AD43DA29F40FDED3D83BDA1A /* [CP] Copy Pods Resources */,
-				BC2DECBCAA752DF72F005975 /* [CP-User] [RNFB] Core Configuration */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = majaplace;
-			productName = majaplace;
-			productReference = 13B07F961A680F5B00A75B9A /* majaplace.app */;
+			name = majablog;
+			productName = majablog;
+			productReference = 13B07F961A680F5B00A75B9A /* majablog.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* majaplace-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* majablog-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "majaplace-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "majablog-tvOS" */;
 			buildPhases = (
 				278FDBCD921D2A74DF4EFEE8 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -283,14 +282,14 @@
 			);
 			dependencies = (
 			);
-			name = "majaplace-tvOS";
-			productName = "majaplace-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* majaplace-tvOS.app */;
+			name = "majablog-tvOS";
+			productName = "majablog-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* majablog-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* majaplace-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* majablog-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "majaplace-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "majablog-tvOSTests" */;
 			buildPhases = (
 				3CE64F02A7FF8007B3953389 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -302,9 +301,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "majaplace-tvOSTests";
-			productName = "majaplace-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* majaplace-tvOSTests.xctest */;
+			name = "majablog-tvOSTests";
+			productName = "majablog-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* majablog-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -333,7 +332,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "majaplace" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "majablog" */;
 			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -346,10 +345,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* majaplace */,
-				00E356ED1AD99517003FC87E /* majaplaceTests */,
-				2D02E47A1E0B4A5D006451C7 /* majaplace-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* majaplace-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* majablog */,
+				00E356ED1AD99517003FC87E /* majablogTests */,
+				2D02E47A1E0B4A5D006451C7 /* majablog-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* majablog-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -422,7 +421,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-majaplace-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-majablog-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,15 +448,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-majaplace-majaplaceTests/Pods-majaplace-majaplaceTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-majablog-majablogTests/Pods-majablog-majablogTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-majaplace-majaplaceTests/Pods-majaplace-majaplaceTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-majablog-majablogTests/Pods-majablog-majablogTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-majaplace-majaplaceTests/Pods-majaplace-majaplaceTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-majablog-majablogTests/Pods-majablog-majablogTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3CE64F02A7FF8007B3953389 /* [CP] Check Pods Manifest.lock */ = {
@@ -475,7 +474,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-majaplace-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-majablog-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -488,15 +487,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-majaplace/Pods-majaplace-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-majablog/Pods-majablog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-majaplace/Pods-majaplace-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-majablog/Pods-majablog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-majaplace/Pods-majaplace-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-majablog/Pods-majablog-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		73669632EA04917D78D6C2D9 /* [CP] Check Pods Manifest.lock */ = {
@@ -514,7 +513,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-majaplace-majaplaceTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-majablog-majablogTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -527,26 +526,16 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-majaplace/Pods-majaplace-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-majablog/Pods-majablog-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-majaplace/Pods-majaplace-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-majablog/Pods-majablog-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-majaplace/Pods-majaplace-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-majablog/Pods-majablog-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		BC2DECBCAA752DF72F005975 /* [CP-User] [RNFB] Core Configuration */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] [RNFB] Core Configuration";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    _JSON_OUTPUT_BASE64=$(python -c 'import json,sys,base64;print(base64.b64encode(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"').read())['${_JSON_ROOT}'])))' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\n\n  # config.admob_delay_app_measurement_init\n  _ADMOB_DELAY_APP_MEASUREMENT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"admob_delay_app_measurement_init\")\n  if [[ $_ADMOB_DELAY_APP_MEASUREMENT == \"true\" ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GADDelayAppMeasurementInit\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"YES\")\n  fi\n\n  # config.admob_ios_app_id\n  _ADMOB_IOS_APP_ID=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"admob_ios_app_id\")\n  if [[ $_ADMOB_IOS_APP_ID ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GADApplicationIdentifier\")\n    _PLIST_ENTRY_TYPES+=(\"string\")\n    _PLIST_ENTRY_VALUES+=(\"$_ADMOB_IOS_APP_ID\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
 		};
 		EA4F4B817225427A4F859883 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -563,7 +552,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-majaplace-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-majablog-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -614,15 +603,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-majaplace-majaplaceTests/Pods-majaplace-majaplaceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-majablog-majablogTests/Pods-majablog-majablogTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-majaplace-majaplaceTests/Pods-majaplace-majaplaceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-majablog-majablogTests/Pods-majablog-majablogTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-majaplace-majaplaceTests/Pods-majaplace-majaplaceTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-majablog-majablogTests/Pods-majablog-majablogTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -632,7 +621,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* majaplaceTests.m in Sources */,
+				00E356F31AD99517003FC87E /* majablogTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +647,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* majaplaceTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* majablogTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,12 +656,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* majaplace */;
+			target = 13B07F861A680F5B00A75B9A /* majablog */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* majaplace-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* majablog-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -684,7 +673,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = majaplace;
+			path = majablog;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -692,7 +681,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14D4B254717B23900E41CBD5 /* Pods-majaplace-majaplaceTests.debug.xcconfig */;
+			baseConfigurationReference = 14D4B254717B23900E41CBD5 /* Pods-majablog-majablogTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -700,7 +689,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = majaplaceTests/Info.plist;
+				INFOPLIST_FILE = majablogTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -714,18 +703,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/majaplace.app/majaplace";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/majablog.app/majablog";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0F40E5571407C2957199E7D /* Pods-majaplace-majaplaceTests.release.xcconfig */;
+			baseConfigurationReference = B0F40E5571407C2957199E7D /* Pods-majablog-majablogTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = majaplaceTests/Info.plist;
+				INFOPLIST_FILE = majablogTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -739,13 +728,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/majaplace.app/majaplace";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/majablog.app/majablog";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2B62041F7E3066FEBC0C18C /* Pods-majaplace.debug.xcconfig */;
+			baseConfigurationReference = A2B62041F7E3066FEBC0C18C /* Pods-majablog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -758,7 +747,7 @@
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = majaplace/Info.plist;
+				INFOPLIST_FILE = majablog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -768,8 +757,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.majaplace;
-				PRODUCT_NAME = majaplace;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.majablog;
+				PRODUCT_NAME = majablog;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -780,7 +769,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C0BE6D19333A33F05A7DF59 /* Pods-majaplace.release.xcconfig */;
+			baseConfigurationReference = 3C0BE6D19333A33F05A7DF59 /* Pods-majablog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -788,7 +777,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VU4TDNT233;
-				INFOPLIST_FILE = majaplace/Info.plist;
+				INFOPLIST_FILE = majablog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -798,8 +787,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.majaplace;
-				PRODUCT_NAME = majaplace;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.majablog;
+				PRODUCT_NAME = majablog;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -809,7 +798,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACEA9ED6F1B2973E03958430 /* Pods-majaplace-tvOS.debug.xcconfig */;
+			baseConfigurationReference = ACEA9ED6F1B2973E03958430 /* Pods-majablog-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -820,7 +809,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "majaplace-tvOS/Info.plist";
+				INFOPLIST_FILE = "majablog-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -830,7 +819,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.majaplace-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.majablog-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -840,7 +829,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10F5C3C0B65B76D9ABD06CBB /* Pods-majaplace-tvOS.release.xcconfig */;
+			baseConfigurationReference = 10F5C3C0B65B76D9ABD06CBB /* Pods-majablog-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -851,7 +840,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "majaplace-tvOS/Info.plist";
+				INFOPLIST_FILE = "majablog-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -861,7 +850,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.majaplace-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.majablog-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -871,7 +860,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE1F236493026E00B8DBFCB8 /* Pods-majaplace-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = CE1F236493026E00B8DBFCB8 /* Pods-majablog-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -881,7 +870,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "majaplace-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "majablog-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -892,17 +881,17 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.majaplace-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.majablog-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/majaplace-tvOS.app/majaplace-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/majablog-tvOS.app/majablog-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87A76B6CC6FEA85F97CF4066 /* Pods-majaplace-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 87A76B6CC6FEA85F97CF4066 /* Pods-majablog-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -912,7 +901,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "majaplace-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "majablog-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -923,10 +912,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.majaplace-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.majablog-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/majaplace-tvOS.app/majaplace-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/majablog-tvOS.app/majablog-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
@@ -1055,7 +1044,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "majaplaceTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "majablogTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1064,7 +1053,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "majaplace" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "majablog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1073,7 +1062,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "majaplace-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "majablog-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1082,7 +1071,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "majaplace-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "majablog-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1091,7 +1080,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "majaplace" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "majablog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

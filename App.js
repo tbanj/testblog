@@ -10,7 +10,6 @@ import { Provider } from 'react-redux';
 
 import startMainTabs from './src/screens/maintabs/startMainTabs';
 import Home from './src/screens/home/Home';
-import AuthScreen from './src/screens/Auth';
 // import startMainTabs from './src/screens/maintabs/startMainTabs';
 import ChatDetail from './src/screens/chatdetail/ChatDetail';
 import ChatRoom from './src/screens/chatRoom/ChatRoom';
@@ -23,11 +22,6 @@ import MenuScreen from './src/screens/menu/MenuScreen';
 const store = configureStore();
 
 // Register screens: below are components which u can only attach redux state to
-Navigation.registerComponent('AuthScreen', () => (props) => (
-    <Provider store={store}>
-        <AuthScreen {...props} />
-    </Provider>
-), () => AuthScreen);
 
 Navigation.registerComponent('maja.ChatRoom', () => (props) => (
     <Provider store={store}>
