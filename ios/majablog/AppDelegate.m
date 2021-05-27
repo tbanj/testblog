@@ -1,4 +1,10 @@
 #import "AppDelegate.h"
+
+// put this condition after AppDelegate.h import to solve RCTBridge required dispatch_sync to load lead to deadlock
+#if RCT_DEV
+#import <React/RCTDevLoadingView.h>
+#endif
+
 #import <ReactNativeNavigation/ReactNativeNavigation.h>
 
 #import <React/RCTBundleURLProvider.h>
@@ -33,6 +39,14 @@ static void InitializeFlipper(UIApplication *application) {
 
   [ReactNativeNavigation bootstrapWithDelegate:self launchOptions:launchOptions];
   
+  NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.js" fallbackResource:nil];
+
+  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:jsCodeLocation
+                                              moduleProvider:nil
+                                               launchOptions:launchOptions];
+  #if RCT_DEV
+   [bridge moduleForClass:[RCTDevLoadingView class]];
+  #endif
   
   return YES;
 }
@@ -44,6 +58,10 @@ static void InitializeFlipper(UIApplication *application) {
 #else
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
+}
+
+- (NSArray<id<RCTBridgeModule>> *)extraModulesForBridge:(RCTBridge *)bridge {
+  return [ReactNativeNavigation extraModulesForBridge:bridge];
 }
 
 @end
